@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List App</title>
+    <!-- Css Style File ---------->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Library Link ------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!--* Start Contact Section -->
+    <section id="contact">
+
+        <div class="container">
+            <!-- Contact Content ------->
+            <div class="contact-content" style="position: relative;">
+                <!-- Success Message -->
+                <div class="success-msg">
+                    <h5>contact list added</h4>
+                    <i class="fas fa-check-circle"></i>
+                </div>
+
+                <!-- Contact Details ------->
+                <div class="contact-details">
+                    <!-- Title -->
+                    <h2 class="title">contact details</h2>
+
+                    <!-- Contact Form ------->
+                    <form action="" id="contact_form">
+                        <!-- User Inputs ------->
+                        <div class="user-inputs">
+                            <!-- First Name -->
+                            <div class="first-name input">
+                                <input type="text" name="first-name" placeholder="first name" id="first_name"
+                                autofocus>
+                                <!-- Error Message -->
+                                <div class="error-msg"></div>
+                            </div>
+                            <!-- Last Name -->
+                            <div class="last-name input">
+                                <input type="text" name="last-name" placeholder="last name" id="last_name">
+                                <!-- Error Message -->
+                                <div class="error-msg"></div>
+                            </div>
+                            <!-- User Country -->
+                            <div class="user-country input">
+                                <input type="text" name="user-country" placeholder="your country" id="user_country">
+                                <!-- Error Message -->
+                                <div class="error-msg"></div>
+                            </div>
+                            <!-- User Number -->
+                            <div class="users-number input">
+                                <input type="number" name="user-number" placeholder="your number" id="user_number">
+                                <!-- Error Message -->
+                                <div class="error-msg"></div>
+                            </div>
+                        </div>
+
+                        <!-- User Gender ------->
+                        <div class="user-gender">
+                            <div class="male gender-type">
+                                <label for="male">male</label>
+                                <input type="radio" name="gender" id="male" value="male">
+                            </div>
+                            <div class="female gender-type">
+                                <label for="female">female</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Action Btns ------->
+                    <div class="action-btns">
+                        <button id="add" class="btn">
+                            <i class="fas fa-plus"></i>
+                            <span>add</span>
+                        </button>
+                        <button id="cancel" class="btn">
+                            <i class="fas fa-times"></i>
+                            <span>cancel</span>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="open-contacts">
+                    <!-- Open Contacts List Btn -->
+                    <button id="open">open contacts</button>
+                </div>
+            </div>
+        </div>
+
+            <!--* Available Contacts ----->
+            <div class="available-contacts">
+                <!-- Available Contacts Container -->
+                <div class="available-contacts-container">
+
+                    <!-- Close Button -->
+                    <button id="close">
+                        <i class="fas fa-times"></i>
+                    </button>
+
+                    <!-- Title -->
+                    <h4 class="title">available contacts</h4>
+
+                    <!-- Contacts List -->
+                    <ul class="contacts-list">
+                    </ul>
+
+                    <!-- Reset Button -->
+                    <button id="reset">reset</button>
+
+                </div>
+            </div>
+    </section>
+    <!--!====================================================================== -->
+    <!-- JS App File ------------>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
